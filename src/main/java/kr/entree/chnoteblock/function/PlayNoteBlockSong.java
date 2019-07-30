@@ -146,6 +146,7 @@ public class PlayNoteBlockSong extends AbstractFunction {
                 songPlayer.addPlayer((Player) player.getHandle());
             }
             songPlayer.setPlaying(true);
+            songPlayer.setAutoDestroy(true);
         } else {
             throw new CREIllegalArgumentException("Unknown song player type " + type, t);
         }
